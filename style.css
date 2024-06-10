@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "ubuntu", sans-serif;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-size: large;
+
+  /* text-transform: capitalize; */
+}
+
+.name span {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 24px;
+}
+.color-mode button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+}
+.color-mode button {
+  cursor: pointer;
+}
+.color-mode .change-to-green:hover {
+  background: #22c55e;
+}
+.color-mode .change-to-blue:hover {
+  background: #3b82f6;
+}
+.change-to-green {
+  background: #15803d;
+}
+.change-to-blue {
+  background: #1d4ed8;
+}
+
+.hero {
+  height: 150px;
+  background: #16a34a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero span {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 36px;
+  font-style: italic;
+}
+hr {
+  border-top: 1px solid white; /* Couleur de la ligne */
+  width: 130px; /* Largeur de la ligne */
+  margin: 20px auto; /* Centrer la ligne et ajouter des marges */
+}
+.mon-profil {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 20px;
+  height: 300px;
+  width: 1000px;
+}
+h2 {
+  text-align: center;
+}
+section {
+  width: 1000px;
+  margin: 0 auto;
+}
+.section-col1 {
+  /* height: 500px; */
+}
+h2 {
+  font-weight: 800;
+  padding: 20px;
+  text-decoration: underline dotted;
+}
+.section-col1 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: right;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #16a34a;
+  align-items: center;
+}
+
+.section-col2 {
+  width: 400px;
+}
+.links img {
+  width: 100px;
+  height: 200px;
+}
+h3 {
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline dotted;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links a {
+  margin: 0 20px;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 800;
+  padding: 20px;
+  text-decoration: underline dotted;
+}
+
+.section-input-contact-form {
+  width: 1000px;
+  margin: 0 auto;
+}
+.section-input-contact-form input {
+  width: 495px;
+  height: 30px;
+}
+.input-contact-form {
+  width: 100%;
+}
+.input-text {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.input-text-name {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+.input-for-message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.boutton-envoyer-message {
+  margin: 10px 0 0 0;
+  height: 30px;
+  border-radius: 3px;
+  background: #16a34a;
+  cursor: pointer;
+}
+.boutton-envoyer-message:hover {
+  background: #22c55e;
+}
+
+footer {
+  height: 100px;
+  background: #16a34a;
+  margin: 30px 0 0 0;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}

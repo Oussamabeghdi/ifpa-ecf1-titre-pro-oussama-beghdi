@@ -7,10 +7,123 @@
       name="description"
       content="lors de ce projet je devais realiser une page web à partir d'une maquette en suivant les consignes"
     />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
-
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.js">
+    <title>IFPA-Titre-pro-ECF1</title>
   </head>
-  <body></body>
+  <body>
+
+    <script>
+        let hero = document.querySelector(".hero");
+        let footer = document.querySelector("footer");
+
+        document.getElementById("change-to-blue").addEventListener("click", function () {
+            hero.style.backgroundColor = "#1d4ed8"; // Bleu
+            footer.style.backgroundColor = "#1d4ed8"; // Bleu
+        });
+
+        document.getElementById("change-to-green").addEventListener("click", function () {
+            hero.style.backgroundColor = "#16a34a"; // Vert
+            footer.style.backgroundColor = "#16a34a"; // Vert
+        });
+    </script>
+    <header>
+      <div class="header-container">
+        <div class="name"><span>J</span>ohn<span>D</span>oe</div>
+        <div class="color-mode">
+          <button id="change-to-green" class="change-to-green"></button>
+          <button id="change-to-blue"  class="change-to-blue"></button>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div><span>John Doe - </span> <span>Développeur Web</span></div>
+
+   
+        <hr >
+    
+     
+    </div>
+
+    <h2>Mon profil</h2>
+    <section class="mon-profil">
+      <div class="section-col1">
+        <img class="portrait" src="./images/portrait.jpg" alt="portrait de John Doe" />
+      </div>
+      <div class="section-col2">
+        <p>
+          Développeur web de père en fils, passionné par la technologie et
+          l'innovation. J'ai acquis une expertise en HTML, CSS, JavaScript et
+          Git, me permettant de créer des sites web performants et esthétiques.
+          Prêt à relever de nouveaux défis.
+        </p>
+      </div>
+    </section>
+    <h3>Mes compétences</h3>
+    <section>
+      <div class="links">
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
+          <img src="./images/html.svg" alt="logo html" /></a
+        ><a href="https://developer.mozilla.org/fr/docs/Web/CSS"
+          ><img src="./images/css.svg" alt="logo css" /></a
+        ><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+          ><img src="./images/js.svg" alt="logo javascript" /></a
+        ><a href="https://github.com/"
+          ><img src="./images/git.svg" alt="log github"
+        /></a>
+      </div>
+    </section>
+    <h4>Me contacter</h4>
+    <section class="section-input-contact-form" >
+        <form action=""> 
+            <div class="input-contact-form">
+        <div class="input-text" >
+            <div class="input-text-name"> <span>Nom *</span>
+                <input type="text" id="Nom" placeholder="Entrez votre nom" required/>
+            </div>
+            
+            <div class="input-text-name"> <span>Prenom *</span> 
+                <input type="text" id="prenom" placeholder="Entrez votre prénom" required/>
+            </div>
+          
+           
+        </div>
+        <div class="input-text">
+        <div class="input-text-name">
+          <span>Email *</span> 
+                <input type="text" id="Nom" placeholder="Entrez votre email" required/>
+ 
+                </div>
+                <div class="input-text-name" >
+                    <span>Téléphone (facultatif)</span> 
+            <input type="text" id="Nom" placeholder="Entrez votre numero de téléphone" />
+        </div>
+    
+    </div>
+    
+      <div class="input-for-message">
+        <span>Message *</span> 
+            <textarea name="Message" rows="5" cols="20" id="message" placeholder="Entrez votre message" required></textarea>
+       
+      </div>
+      <button class="boutton-envoyer-message ">Envoyer</button>
+    </section></form>
+     
+    <footer>
+        <div><span>©</span><span>John Doe Officiel</span></div>
+
+    </footer>
+  </body>
 </html>
