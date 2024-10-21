@@ -118,6 +118,7 @@ h2 {
 .section-col2 p {
   text-align: justify;
   line-height: 20px;
+  color: #9498a0;
 }
 .links img {
   width: 100px;
@@ -158,8 +159,8 @@ h4 {
   margin: 0 auto;
 }
 .section-input-contact-form input {
-  width: 495px;
-  height: 30px;
+  width: 410px;
+  height: 35px;
 }
 .input-contact-form {
   width: 100%;
@@ -175,6 +176,20 @@ h4 {
   flex-direction: column;
   margin: 5px 0;
 }
+
+input,
+textarea {
+  border-color: #f9fafb23;
+  background: #f9fafb;
+  border-radius: 5px;
+  padding: 10px;
+}
+input::placeholder {
+  color: #c4c9d2;
+}
+textarea::placeholder {
+  color: #c4c9d2;
+}
 .input-text-name span {
   padding: 5px 0;
 }
@@ -182,6 +197,7 @@ h4 {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 830px;
 }
 .input-for-message span {
   padding: 5px 0;
