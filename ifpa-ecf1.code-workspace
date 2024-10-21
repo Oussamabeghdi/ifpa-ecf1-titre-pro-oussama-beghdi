@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../Downloads/formation_ressources_integration_profil_devweb_page-main"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "ifpa-ecf1"
+  }
+}

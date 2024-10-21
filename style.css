@@ -46,10 +46,15 @@ header {
 .change-to-green {
   background: #15803d;
 }
+.change-to-green:hover {
+  background: #22c55e;
+}
 .change-to-blue {
   background: #1d4ed8;
 }
-
+.change-to-blue:hover {
+  background: #3b82f6;
+}
 .hero {
   height: 150px;
   background: #16a34a;
@@ -84,13 +89,14 @@ section {
   width: 1000px;
   margin: 0 auto;
 }
-.section-col1 {
-  /* height: 500px; */
-}
+
 h2 {
   font-weight: 800;
   padding: 20px;
-  text-decoration: underline dotted;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #16a34a;
+  text-underline-offset: 5px;
 }
 .section-col1 img {
   width: 200px;
@@ -106,7 +112,12 @@ h2 {
 }
 
 .section-col2 {
-  width: 400px;
+  width: 320px;
+  height: 130px;
+}
+.section-col2 p {
+  text-align: justify;
+  line-height: 20px;
 }
 .links img {
   width: 100px;
@@ -115,8 +126,12 @@ h2 {
 h3 {
   font-weight: 800;
   text-align: center;
-  text-decoration: underline dotted;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #16a34a;
+  text-underline-offset: 5px;
 }
+
 .links {
   display: flex;
   justify-content: center;
@@ -130,7 +145,12 @@ h4 {
   text-align: center;
   font-weight: 800;
   padding: 20px;
-  text-decoration: underline dotted;
+}
+.text-style {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #16a34a;
+  text-underline-offset: 5px;
 }
 
 .section-input-contact-form {
@@ -155,30 +175,41 @@ h4 {
   flex-direction: column;
   margin: 5px 0;
 }
+.input-text-name span {
+  padding: 5px 0;
+}
 .input-for-message {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
+.input-for-message span {
+  padding: 5px 0;
+}
 .boutton-envoyer-message {
   margin: 10px 0 0 0;
   height: 30px;
   border-radius: 3px;
+  border: none;
   background: #16a34a;
   cursor: pointer;
+  color: white;
 }
 .boutton-envoyer-message:hover {
   background: #22c55e;
 }
 
-footer {
+.footer {
   height: 100px;
   background: #16a34a;
   margin: 30px 0 0 0;
 }
-footer div {
+.footer div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
+}
+footer span {
+  color: white;
 }

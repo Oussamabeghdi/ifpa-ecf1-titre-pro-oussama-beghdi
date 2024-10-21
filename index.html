@@ -20,28 +20,16 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="index.js">
     <title>IFPA-Titre-pro-ECF1</title>
   </head>
   <body>
 
-    <script>
-        let hero = document.querySelector(".hero");
-        let footer = document.querySelector("footer");
-
-        document.getElementById("change-to-blue").addEventListener("click", function () {
-            hero.style.backgroundColor = "#1d4ed8"; // Bleu
-            footer.style.backgroundColor = "#1d4ed8"; // Bleu
-        });
-
-        document.getElementById("change-to-green").addEventListener("click", function () {
-            hero.style.backgroundColor = "#16a34a"; // Vert
-            footer.style.backgroundColor = "#16a34a"; // Vert
-        });
-    </script>
+  
     <header>
       <div class="header-container">
-        <div class="name"><span>J</span>ohn<span>D</span>oe</div>
+        <div>
+          <img src="./images/logo-john-doe.svg" alt="logo: john doe">
+        </div>
         <div class="color-mode">
           <button id="change-to-green" class="change-to-green"></button>
           <button id="change-to-blue"  class="change-to-blue"></button>
@@ -50,14 +38,11 @@
     </header>
     <div class="hero">
       <div><span>John Doe - </span> <span>Développeur Web</span></div>
+        <hr>
 
-   
-        <hr >
-    
-     
     </div>
 
-    <h2>Mon profil</h2>
+    <h2 class="text-style" >Mon profil</h2>
     <section class="mon-profil">
       <div class="section-col1">
         <img class="portrait" src="./images/portrait.jpg" alt="portrait de John Doe" />
@@ -71,7 +56,7 @@
         </p>
       </div>
     </section>
-    <h3>Mes compétences</h3>
+    <h3 class="text-style" >Mes compétences</h3>
     <section>
       <div class="links">
         <a href="https://developer.mozilla.org/fr/docs/Web/HTML">
@@ -85,7 +70,7 @@
         /></a>
       </div>
     </section>
-    <h4>Me contacter</h4>
+    <h4 class="text-style" >Me contacter</h4>
     <section class="section-input-contact-form" >
         <form action=""> 
             <div class="input-contact-form">
@@ -119,11 +104,28 @@
        
       </div>
       <button class="boutton-envoyer-message ">Envoyer</button>
-    </section></form>
+    </form>
+    </section>
      
-    <footer>
+    <footer class="footer">
         <div><span>©</span><span>John Doe Officiel</span></div>
 
     </footer>
+    <script src="index.js"></script>
+
   </body>
-</html>
+  </html>
+  <!-- <script>
+    let hero = document.querySelector(".hero");
+    let footer = document.querySelector("footer");
+
+    document.getElementById("change-to-blue").addEventListener("click", function () {
+        hero.style.backgroundColor = "#1d4ed8"; // Bleu
+        footer.style.backgroundColor = "#1d4ed8"; // Bleu
+    });
+
+    document.getElementById("change-to-green").addEventListener("click", function () {
+        hero.style.backgroundColor = "#16a34a"; // Vert
+        footer.style.backgroundColor = "#16a34a"; // Vert
+    });
+</script> -->
